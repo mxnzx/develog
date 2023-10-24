@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import GlobalStyle from "style/GlobalStyles";
+import { BaseContainer } from "App.style";
+
+import SideBar from "components/Common/SideBar";
+import CompanyListPage from "pages/Company/CompanyListPage";
 
 function App() {
-  const [count, setCount] = useState(0);
-  console.log("as");
-
+  // hideComponent로 웰컴페이지에서 SideBar 제거
   return (
     <>
-      <p>Develog Project</p>
+      <GlobalStyle />
+      <SideBar />
+      <BaseContainer>
+        <CompanyListPage />
+      </BaseContainer>
     </>
   );
 }
