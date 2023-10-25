@@ -1,16 +1,3 @@
-package com.ssafy.develog.company.service;
-
-import com.ssafy.develog.company.domain.CompanyRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Slf4j
-@Service
-@RequiredArgsConstructor
-@Transactional(readOnly = true)
-public class CompanyService {
-
-    private final CompanyRepository companyRepository;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ed386f7d55a1ce8cda75ea54a446d0f2f5eb020fa911c7992f4ddd840e025a8
+size 1326
