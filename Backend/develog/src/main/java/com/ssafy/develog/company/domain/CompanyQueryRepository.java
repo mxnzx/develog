@@ -1,17 +1,3 @@
-package com.ssafy.develog.company.domain;
-
-import com.querydsl.jpa.impl.JPAQueryFactory;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
-
-@Repository
-@Transactional(readOnly = true)
-@RequiredArgsConstructor
-public class CompanyQueryRepository {
-
-    private final JPAQueryFactory queryFactory;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:08c0e416491bdbcec6e503f74a7d9f8daa78dc9c0236c609aca9b42d467f74c5
+size 526
