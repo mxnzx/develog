@@ -1,21 +1,3 @@
-import React, { useState } from "react";
-import GlobalStyle from "style/GlobalStyles";
-import { BaseContainer } from "App.style";
-
-import SideBar from "components/Common/SideBar";
-import CompanyListPage from "pages/Company/CompanyListPage";
-
-function App() {
-  // hideComponent로 웰컴페이지에서 SideBar 제거
-  return (
-    <>
-      <GlobalStyle />
-      <SideBar />
-      <BaseContainer>
-        <CompanyListPage />
-      </BaseContainer>
-    </>
-  );
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6d341ea7c29e842d6899f7d3e141524b785ff80f5d1821d81203ee2a0ccda22
+size 1264
