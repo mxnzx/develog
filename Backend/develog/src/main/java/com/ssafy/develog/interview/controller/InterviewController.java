@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/?")
+@RequestMapping("/api/interview")
 @RequiredArgsConstructor
 public class InterviewController {
 
     private final InterviewService interviewService;
+
+    
 }
