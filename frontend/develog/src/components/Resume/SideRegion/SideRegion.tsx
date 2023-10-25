@@ -1,27 +1,3 @@
-import React from "react";
-import { backgroundWhite } from "style/Color";
-import styled from "styled-components";
-
-// 컴포넌트
-import ApplyInfo from "./ApplyInfo";
-
-const Container = styled.div`
-  background-color: ${backgroundWhite};
-  width: 28%;
-  height: 40rem;
-  border-radius: 2.5rem;
-`;
-
-// 사이드 탭 부분
-
-function SideRegion() {
-  return (
-    <>
-      <Container>
-        <ApplyInfo />
-      </Container>
-    </>
-  );
-}
-
-export default SideRegion;
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe9342dbb5c17f6d157da0cd83fe890c98bc7f102f68555cb8e514e02d858768
+size 1742
