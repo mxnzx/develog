@@ -1,23 +1,3 @@
-import React from "react";
-
-// 스타일
-import { OutWrapper, Title } from "../SideRegion.style";
-import School from "./School";
-import Certificate from "./Certificate";
-import Education from "./Education";
-
-// 학력정보, 자격증, 교육이수, 경력, 프로젝트
-function UserInfo() {
-  return (
-    <>
-      <Title>📑 포트폴리오</Title>
-      <OutWrapper>
-        <School />
-        <Certificate />
-        <Education />
-      </OutWrapper>
-    </>
-  );
-}
-
-export default UserInfo;
+version https://git-lfs.github.com/spec/v1
+oid sha256:342abde100a3c8aec24a0fb3a8cb71b5e59eaf2d5d85f3b0ddadf637f65d189b
+size 548
