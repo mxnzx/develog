@@ -1,16 +1,3 @@
-package com.ssafy.develog.interview.service;
-
-import com.ssafy.develog.interview.domain.InterviewRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Slf4j
-@Service
-@RequiredArgsConstructor
-@Transactional(readOnly = true)
-public class InterviewService {
-
-    private final InterviewRepository interviewRepository;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d2dc68c9df6787420327666e8da8d470b4d8b45daa718998fe9d8e583c90dc6f
+size 1054
