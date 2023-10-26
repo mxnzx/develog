@@ -1,18 +1,3 @@
-package com.ssafy.develog.interview.controller;
-
-import com.ssafy.develog.interview.service.InterviewService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api/interview")
-@RequiredArgsConstructor
-public class InterviewController {
-
-    private final InterviewService interviewService;
-
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:653c0bffd5e40f73a9d8db395726ee683fe9628fe20150bf2b96c3053ec6dafa
+size 1852
