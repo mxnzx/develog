@@ -9,7 +9,7 @@ public class RedirectUrlProperties {
 
     public static String KAKAO_REDIRECT_URL;
 
-    public RedirectUrlProperties(@Value("http://localhost:8080/login/oauth2/code/kakao") String kakaoRedirectUrl) {
+    public RedirectUrlProperties(@Value("http://localhost:9090/login/oauth2/code/kakao") String kakaoRedirectUrl) {
         KAKAO_REDIRECT_URL = kakaoRedirectUrl;
     }
 }

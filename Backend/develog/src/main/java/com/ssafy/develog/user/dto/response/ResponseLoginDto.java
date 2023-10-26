@@ -8,7 +8,7 @@ import lombok.Data;
 @Builder
 public class ResponseLoginDto {
 
-    private int userId;
+    private Long userId;
 //    private String userEmail;
     private String name;
     private String AccessToken;
