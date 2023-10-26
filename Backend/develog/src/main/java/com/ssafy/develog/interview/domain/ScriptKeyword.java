@@ -20,5 +20,4 @@ public class ScriptKeyword {
     @JoinColumn(name = "prediction_id")
     @ManyToOne(fetch = FetchType.LAZY)
     private Prediction prediction;
-
 }
