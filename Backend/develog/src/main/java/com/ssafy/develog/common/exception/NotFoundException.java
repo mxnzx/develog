@@ -1,10 +1,3 @@
-package com.ssafy.develog.common.exception;
-
-public class NotFoundException extends RuntimeException {
-    public static final String USER_NOT_FOUND = "존재하지 않는 회원입니다.";
-    public static final String COMPANY_LIST_NOT_FOUND = "관심기업 리스트가 없습니다.";
-
-    public NotFoundException(String message) {
-        super(message);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e4a38fa0b7f1cd4b95afc9c8cb9b1c50d526260ebc1a4d11090b7f1e3f5f0a5
+size 1078
