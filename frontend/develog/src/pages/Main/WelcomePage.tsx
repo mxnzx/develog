@@ -6,7 +6,7 @@ const WelcomePage = ()=>{
     
     return(
         <>
-        {/* <Welcome></Welcome> */}
+        <Welcome></Welcome>
         </>
     );
 };
