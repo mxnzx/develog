@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 // 사이드 탭 부분
-function MainRegion() {
+const MainRegion = () => {
   return (
     <>
       <Container></Container>
