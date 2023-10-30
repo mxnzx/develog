@@ -1,6 +1,7 @@
 import React from "react";
+import * as S from "./HomeInterview.style";
 const HomeInterview = () => {
-  return <></>;
+  return <S.InterviewContainer></S.InterviewContainer>;
 };
 
 export default HomeInterview;
