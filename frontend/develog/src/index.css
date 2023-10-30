@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d5b1f808581d979cd6ed73e30ed50da9dad87ad54e69c937fd157b767fd15c1
-size 1195
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  -webkit-text-size-adjust: 100%;
+}
