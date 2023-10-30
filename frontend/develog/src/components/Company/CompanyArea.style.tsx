@@ -4,7 +4,9 @@ import { backgroundWhite } from "style/Color";
 export const BackRegion = styled.div`
   background-color: ${backgroundWhite};
   /* position: fixed; */
-  width: 80rem;
-  height: 40rem;
+  width: 85vw;
+  height: 90vh;
+  /* max-height: 40rem; */
+  min-height: 80vh;
   border-radius: 2.5rem;
 `;
