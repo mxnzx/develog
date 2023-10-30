@@ -7,20 +7,18 @@ import Text from "style/Text";
 
 // 타입
 export interface LineWordProps {
-    word: string ;
-    onClick ?: (e:any) => void;
+  word: string;
+  onClick?: (e: any) => void;
 }
 
-const PredictItem = (props : LineWordProps) => {
-    return (
-        <>
-        <InterviewFullLine> 
-            <Text> 
-                {props.word} 
-            </Text>
-        </InterviewFullLine>
-        </>
-    )
-}
+const PredictItem = (props: LineWordProps) => {
+  return (
+    <>
+      <InterviewFullLine>
+        <Text>{props.word}</Text>
+      </InterviewFullLine>
+    </>
+  );
+};
 
 export default PredictItem;
