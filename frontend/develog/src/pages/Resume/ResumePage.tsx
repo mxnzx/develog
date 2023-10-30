@@ -1,7 +1,9 @@
-import Resume from "components/Resume/Resume";
 import React from "react";
 
-function ResumePage() {
+// 컴포넌트
+import Resume from "components/Resume/Resume";
+
+const ResumePage = () => {
   return (
     <>
       <Resume />

@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: space-between;
 `;
 
-function Resume() {
+const Resume = () => {
   return (
     <>
       <Container>
@@ -20,6 +20,6 @@ function Resume() {
       </Container>
     </>
   );
-}
+};
 
 export default Resume;
