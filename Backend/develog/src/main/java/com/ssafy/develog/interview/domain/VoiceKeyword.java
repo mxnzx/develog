@@ -1,24 +1,3 @@
-package com.ssafy.develog.interview.domain;
-
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
-@Entity
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class VoiceKeyword {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long voiceKeywordId;
-
-    @JoinColumn(name = "voice_id")
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Voice voice;
-
-    private String keyword;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad3ccb8a8314642404431f91682ec99412c6781c12779aa05690ef748819c661
+size 938
