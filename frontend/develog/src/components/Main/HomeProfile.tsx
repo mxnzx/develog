@@ -1,11 +1,7 @@
 import React from "react";
-
+import * as S from "./HomeProfile.style";
 const HomeProfile = () => {
-  return (
-    <>
-      <h1>HomeProfile이야</h1>
-    </>
-  );
+  return <S.ProfileContainer></S.ProfileContainer>;
 };
 
 export default HomeProfile;
