@@ -20,6 +20,6 @@ const Resume = () => {
       </Container>
     </>
   );
-}
+};
 
 export default Resume;

@@ -16,6 +16,6 @@ const MainRegion = () => {
       <Container></Container>
     </>
   );
-}
+};
 
 export default MainRegion;
