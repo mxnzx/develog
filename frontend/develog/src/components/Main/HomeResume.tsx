@@ -1,7 +1,7 @@
 import React from "react";
-
+import * as S from "./HomeResume.style";
 const HomeResume = () => {
-  return <></>;
+  return <S.ResumeContainer></S.ResumeContainer>;
 };
 
 export default HomeResume;
