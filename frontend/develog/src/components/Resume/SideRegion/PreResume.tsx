@@ -1,15 +1,3 @@
-import React from "react";
-import styled from "styled-components";
-
-// 스타일
-import { Title } from "./SideRegion.style";
-
-const PreResume = () => {
-  return (
-    <>
-      <Title>✏ 이전자소서</Title>
-    </>
-  );
-}
-
-export default PreResume;
+version https://git-lfs.github.com/spec/v1
+oid sha256:93881e362880fcb323be77668317e69ba1fdf9828d7f5dbd7f046b04eaf38e66
+size 2353
