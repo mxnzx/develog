@@ -1,21 +1,3 @@
-import React from "react";
-import { backgroundWhite } from "style/Color";
-import styled from "styled-components";
-
-const Container = styled.div`
-  background-color: ${backgroundWhite};
-  width: 67%;
-  height: 75vh;
-  border-radius: 2rem;
-`;
-
-// 사이드 탭 부분
-const MainRegion = () => {
-  return (
-    <>
-      <Container></Container>
-    </>
-  );
-};
-
-export default MainRegion;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8db9afe0738ecd64629e7d92395dac736775aaf471096d2fce8624ce06b478c5
+size 6531
