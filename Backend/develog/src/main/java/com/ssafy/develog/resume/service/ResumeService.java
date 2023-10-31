@@ -1,16 +1,3 @@
-package com.ssafy.develog.resume.service;
-
-import com.ssafy.develog.resume.domain.ResumeRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Slf4j
-@Service
-@RequiredArgsConstructor
-@Transactional(readOnly = true)
-public class ResumeService {
-
-    private final ResumeRepository resumeRepository;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:52486715a2023b3a971aaed3130fe0b9910e73de8c0efeaae20ebf9621e29917
+size 2530
