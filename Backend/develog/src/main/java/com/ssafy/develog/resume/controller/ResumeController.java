@@ -1,16 +1,3 @@
-package com.ssafy.develog.resume.controller;
-
-import com.ssafy.develog.resume.service.ResumeService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api/?")
-@RequiredArgsConstructor
-public class ResumeController {
-
-    private final ResumeService resumeService;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f3a12314c5181de951af23ed814ff1089782daacd5fd7b25ef13375210604ae0
+size 893
