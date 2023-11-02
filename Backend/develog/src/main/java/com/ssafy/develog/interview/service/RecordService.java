@@ -1,17 +1,3 @@
-package com.ssafy.develog.interview.service;
-
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Service
-@Slf4j
-@Transactional(readOnly = true)
-@RequiredArgsConstructor
-public class RecordService {
-
-    public void deleteExamFile(Long recordId) {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:40b732736b5a5a4f9d89af714b6ebc5363c655ae190c05583ddeee511977f071
+size 824
