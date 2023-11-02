@@ -1,8 +1,3 @@
-# env 파일 불러오기
-import os
-from dotenv import load_dotenv
-load_dotenv()
-
-# 클로바 키 세팅
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec8e41552d892519f984286c236446f74213086135c3e48aaee5301ce0c21128
+size 949
