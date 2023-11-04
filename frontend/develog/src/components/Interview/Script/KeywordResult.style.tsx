@@ -20,5 +20,5 @@ export const KeywordWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-left: 19%;
+  margin-left: 40px;
 `;
