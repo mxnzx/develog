@@ -1,0 +1,7 @@
+package com.ssafy.develog.interview.domain;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RecordDetailRepository extends JpaRepository<RecordDetail, Long> {
+
+}
