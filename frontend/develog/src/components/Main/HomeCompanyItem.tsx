@@ -1,18 +1,3 @@
-import React from "react";
-import * as S from "./HomeCompanyItem.style";
-type HomeCompanyItemProps = {
-  company: {
-    name: string;
-    imgSrc: string;
-  };
-};
-const HomeCompanyItem: React.FC<HomeCompanyItemProps> = ({ company }) => {
-  return (
-    <S.ItemContainer>
-      <S.CompanyImg src={company.imgSrc}></S.CompanyImg>
-      <S.CompanyName>{company.name}</S.CompanyName>
-    </S.ItemContainer>
-  );
-};
-
-export default HomeCompanyItem;
+version https://git-lfs.github.com/spec/v1
+oid sha256:f86dcc06ac0a19f094cadf4640fa4a1214f5da53482937c9f36607a6a432f078
+size 518
