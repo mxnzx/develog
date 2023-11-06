@@ -3,13 +3,13 @@ import * as S from "./HomeCompanyItem.style";
 type HomeCompanyItemProps = {
   company: {
     name: string;
-    imgSrc: string;
+    logoUrl: string;
   };
 };
 const HomeCompanyItem: React.FC<HomeCompanyItemProps> = ({ company }) => {
   return (
     <S.ItemContainer>
-      <S.CompanyImg src={company.imgSrc}></S.CompanyImg>
+      <S.CompanyImg src={company.logoUrl}></S.CompanyImg>
       <S.CompanyName>{company.name}</S.CompanyName>
     </S.ItemContainer>
   );

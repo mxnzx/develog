@@ -8,7 +8,9 @@ export const ItemContainer = styled.div`
   width: 20%;
 `;
 export const CompanyImg = styled.img`
-  height: 65%;
+  height: 71px;
+  width: 71px;
+  border-radius: 61px;
   cursor: pointer;
 `;
 export const CompanyName = styled.p`
