@@ -1,20 +1,3 @@
-import styled from "styled-components";
-
-export const QuestionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-export const Text = styled.div`
-  display: flex;
-  flex-direction: row;
-  height: 28px;
-  align-items: center;
-  margin: 2%;
-`;
-
-export const Icon = styled.img`
-  margin-left: 5px;
-  height: 70%;
-`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f026938d632a816e65adf13c836c8373032c1319e7bbef8a62727d7eb10f975
+size 755
