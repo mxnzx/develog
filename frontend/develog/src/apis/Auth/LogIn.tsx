@@ -1,4 +1,3 @@
-import axios from "axios";
 import { publicApi } from "apis";
 
 // 로그인 조회 api
