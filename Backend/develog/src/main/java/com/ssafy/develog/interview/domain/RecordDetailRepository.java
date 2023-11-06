@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab76c46043e9da75e46fe462af540003b7f12486f9908d02a3f9d999ecd60df8
-size 761
+package com.ssafy.develog.interview.domain;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+
+public interface RecordDetailRepository extends JpaRepository<RecordDetail, Long> {
+
+
+}
