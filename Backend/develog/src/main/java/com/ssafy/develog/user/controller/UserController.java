@@ -1,16 +1,3 @@
-package com.ssafy.develog.user.controller;
-
-import com.ssafy.develog.user.service.UserService;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api/?")
-@RequiredArgsConstructor
-public class UserController {
-
-    private final UserService userService;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ad9329d68c6646fd2284cd94bcdbb0887aceff30a080b470293c0ad98a7f797
+size 3689

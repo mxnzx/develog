@@ -1,16 +1,3 @@
-package com.ssafy.develog.user.service;
-
-import com.ssafy.develog.user.domain.UserRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Slf4j
-@Service
-@RequiredArgsConstructor
-@Transactional(readOnly = true)
-public class UserService {
-
-    private final UserRepository userRepository;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1f89fa1b6291505076f266e6f28d21f24e32cdf04ed3c506c048b5851b233261
+size 5184
