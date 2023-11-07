@@ -1,7 +1,3 @@
-# env 파일 불러오기
-import os
-from dotenv import load_dotenv
-load_dotenv()
-
-# GPT 키 세팅
-OPENAIKEY = os.getenv("OPENAIKEY")
+version https://git-lfs.github.com/spec/v1
+oid sha256:15f0be7ab50724c816814046fa5af541bdc76843f16d75ff55cd43c00f7b06d6
+size 940
