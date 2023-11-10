@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 
 /src/ignore
+
+# Mac
+../.DS_Store
+../../.DS_Store
