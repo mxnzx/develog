@@ -1,3 +1,3 @@
-import React from "react";
-
-// 면접 준비 메인 컴포넌트(가장 바깥)
+version https://git-lfs.github.com/spec/v1
+oid sha256:2106b3f454f478ddf60913d4d8e1031bdebeeb3ae15520ca9820f5f12dd83cfc
+size 2226

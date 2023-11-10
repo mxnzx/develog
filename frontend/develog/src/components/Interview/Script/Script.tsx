@@ -1,3 +1,3 @@
-import React from "react";
-
-// 면접페이지 컴포넌트(헤더+ 좌측 + 우측 컴포넌트 불러오기)
+version https://git-lfs.github.com/spec/v1
+oid sha256:9acf9c2c7899afd2bf54141048c3d07c98a80ba73158483abea45c593b5a35af
+size 6775

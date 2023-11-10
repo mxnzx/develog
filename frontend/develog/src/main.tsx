@@ -1,14 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
-import { Provider } from "react-redux";
-import store from "./store/index.tsx";
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  // <React.StrictMode>
-  <Provider store={store}>
-    <App />
-  </Provider>
-  // </React.StrictMode>
-);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1d0508eb9fdfbdc9323326fdb67a1dc0ae0ace33fb393bb574b8c76c498c801a
+size 875
