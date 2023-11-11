@@ -1,3 +1,12 @@
 import React from "react";
 
-// 포트폴리오 내 프로젝트 경험 컴포넌트
+// 포트폴리오 내 학력사항 컴포넌트
+
+const InfoPjt = () => {
+  return (
+    <>
+      <div>pjt</div>
+    </>
+  );
+};
+export default InfoPjt;
