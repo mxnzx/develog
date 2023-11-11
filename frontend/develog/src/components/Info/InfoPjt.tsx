@@ -1,12 +1,3 @@
-import React from "react";
-
-// 포트폴리오 내 학력사항 컴포넌트
-
-const InfoPjt = () => {
-  return (
-    <>
-      <div>pjt</div>
-    </>
-  );
-};
-export default InfoPjt;
+version https://git-lfs.github.com/spec/v1
+oid sha256:61636a9ed46e8c0f81916439acd18bd4897091369340489db0e562acd60b32d6
+size 2708
