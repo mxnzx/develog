@@ -4,8 +4,8 @@ export const KeywordContainer = styled.div`
   flex-direction: column;
   width: 50%;
   height: 100%;
+  margin-top: 10px;
   padding-left: 2%;
-  justify-content: center;
 `;
 
 export const KeywordTitle = styled.div`
