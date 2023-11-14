@@ -1,16 +1,3 @@
-// RootState.ts
-import { UserState } from "./reducers/user";
-import { ResumeState } from "./reducers/resumeStore";
-import { VoiceState } from "./reducers/voiceStore";
-import { PracticeState } from "./reducers/practiceStore";
-
-// 모든 슬라이스의 상태를 포함하는 전체 상태 타입을 정의합니다.
-export interface RootState {
-  user: UserState;
-  // 자소서
-  resumeStore: ResumeState;
-  // TTS
-  voiceStore: VoiceState;
-  //모의면접 질문
-  practiceStore: PracticeState;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b20f5424e5209eaa2d774c7ffb339464ba49929e5a58f7fb101a4cb34ff054a
+size 582
