@@ -1,13 +1,3 @@
-package com.ssafy.develog;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
-public class DevelogApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(DevelogApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a979119a25a5575b87715b377043b0b0d538fcfe5bf3b49c0e01c27d848d7904
+size 793
