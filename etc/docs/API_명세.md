@@ -1,0 +1,7 @@
+# API 명세
+
+### 스웨거 주소
+
+[API 명세서](API%20%E1%84%86%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A6%204735c827e20b4f45a962cda5ec4b4653/API%20%E1%84%86%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A6%E1%84%89%E1%85%A5%20c6f8f48adc6f4535ae402d06777fda74.csv)
+
+[탬플릿](https://www.notion.so/cdc3da8e2e6948178aab24dda23d92fe?pvs=21)
