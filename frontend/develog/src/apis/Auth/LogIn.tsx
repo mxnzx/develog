@@ -5,9 +5,9 @@ export const logInAPI = async (code: string) => {
   try {
     // console.log('마이페이지 try진입')
     const response = await publicApi.post("/users/login/kakao", { code });
-    console.log(response);
+    // console.log(response);
     return response.data;
   } catch (error) {
-    console.error("error!", error);
+    // console.error("error!", error);
   }
 };
