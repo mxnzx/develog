@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e96dc1bf36c0c434bdbb1aa827261bbedb12a17672a4714c81b63e3316c0968b
-size 582
+package com.ssafy.develog.resume.dto.response;
+
+import com.ssafy.develog.resume.domain.Category;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseCategory {
+
+    private Long categoryId;
+    private String keyword;
+
+    public static ResponseCategory from(Category category){
+
+        ResponseCategory response = new ResponseCategory();
+        response.categoryId = category.getCategoryId();
+        response.keyword = category.getKeyword();
+
+        return response;
+    }
+}

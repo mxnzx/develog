@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6be01367c857a102858617559f761759b219d34b0fbe2e0bb5330c213656dddf
-size 529
+package com.ssafy.develog.interview.dto.request;
+
+import com.ssafy.develog.common.domain.VoiceCheckType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class RequestVoiceAnalysis {
+    private Long voiceId;
+    private String voiceText;
+    private int voiceSecond;
+    private VoiceCheckType voiceCheckType;
+    private ArrayList<String> containsKeyword;
+    private ArrayList<String> unContainsKeyword;
+}

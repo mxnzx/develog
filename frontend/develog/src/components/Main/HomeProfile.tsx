@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2f88d9d28c5e102e3d5de9c278791c350df9207c5d6db942d8da2b742c431d5
-size 659
+import React from "react";
+import * as S from "./HomeProfile.style";
+
+export interface ProfileType {
+  userName: string;
+  userEmail: string;
+}
+
+const HomeProfile = (props: ProfileType) => {
+  return (
+    <S.ProfileContainer>
+      <S.ProfileBG src="/icon/profile_cloud.png" />
+      <S.BackCircle src="/image/back_circle.png"></S.BackCircle>
+      <S.Avatar src="https://github.com/mxnzx/chu/assets/77240765/b7d2b534-0881-4166-bd89-8cc3f65120a0"></S.Avatar>
+      <S.TextContainer>
+        <S.Name>{props.userName}</S.Name>
+        <S.Email>{props.userEmail}</S.Email>
+      </S.TextContainer>
+    </S.ProfileContainer>
+  );
+};
+
+export default HomeProfile;

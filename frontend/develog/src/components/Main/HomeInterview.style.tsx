@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a09003af1ab5d4f47cfe7061ae1203579ea57f6163117b788f55e38362495b63
-size 671
+import styled, { css } from "styled-components";
+import { Outline } from "./Home.style";
+import * as R from "./HomeResume.style";
+
+export const InterviewContainer = styled(Outline)`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+`;
+
+export const Title = styled(R.Title)``;
+
+export const InterviewList = styled(R.ResumeList)``;
+
+export interface ListType {
+  index: number;
+}
+
+export const ListItem = styled(R.ListItem)<{ index: number }>`
+  border-left: ${(props) => (props.index % 2 === 0 ? "12px solid #00216b" : "12px solid #63636B")};
+`;
+
+export const ItemContent = styled(R.ItemContent)``;
+
+export const ItemHeader = styled(R.ItemHeader)``;

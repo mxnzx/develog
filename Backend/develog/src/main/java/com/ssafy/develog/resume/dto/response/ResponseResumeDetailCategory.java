@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aea24f2c71c0a56b26a17c91b2e52cebc8d1aaf47a6994b1228eb798f87544db
-size 825
+package com.ssafy.develog.resume.dto.response;
+
+import com.ssafy.develog.resume.domain.ResumeDetailCategory;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseResumeDetailCategory {
+
+    public String keyword;
+
+    public static ResponseResumeDetailCategory from(ResumeDetailCategory resumeDetailCategory){
+
+        ResponseResumeDetailCategory response = new ResponseResumeDetailCategory();
+        response.keyword =
+                resumeDetailCategory.getUserCategory() == null ?
+                        resumeDetailCategory.getCategory() == null ? "-1" : resumeDetailCategory.getCategory().getKeyword() :
+                        resumeDetailCategory.getUserCategory().getKeyword();
+
+        return response;
+    }
+}

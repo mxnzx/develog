@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edab7fc2cee5a5ae0eadd16b35038e71caecab8609c51d1d0776c502a9cba08b
-size 557
+package com.ssafy.develog.resume.dto.response;
+
+import com.ssafy.develog.resume.domain.ResumeDetail;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseResumeDetailId {
+
+    private Long resumeDetailId;
+
+    public static ResponseResumeDetailId from(ResumeDetail resumeDetail){
+
+        ResponseResumeDetailId response = new ResponseResumeDetailId();
+        response.resumeDetailId = resumeDetail.getResumeDetailId();
+
+        return response;
+    }
+
+}

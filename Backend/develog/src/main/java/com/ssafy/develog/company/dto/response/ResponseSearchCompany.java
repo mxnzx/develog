@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb18bf6cafdf5611bebb344884fd71bc64d76a17d2a75f0efaf8d07537f65a01
-size 619
+package com.ssafy.develog.company.dto.response;
+
+import com.ssafy.develog.company.domain.CompanyInfo;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseSearchCompany {
+
+    private String name;
+    private Long companyInfoId;
+
+    public static ResponseSearchCompany from(CompanyInfo companyInfo){
+
+        ResponseSearchCompany response = new ResponseSearchCompany();
+        response.name = companyInfo.getName();
+        response.companyInfoId = companyInfo.getCompanyInfoId();
+
+        return response;
+    }
+}

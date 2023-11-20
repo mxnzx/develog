@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:edf68f6d62c7580b2a675ff38740868cbddc0c099e4b57bdb4d311b6fd7d9413
-size 1193
+package com.ssafy.develog.user.domain;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+@RequiredArgsConstructor
+public class UserDetailsImpl implements UserDetails {
+
+    private final User user;
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        Collection<GrantedAuthority> collectors = new ArrayList<>();
+
+        collectors.add(()->{return "ROLE_" + user.getRole();});
+
+        return collectors;
+    }
+
+    @Override
+    public String getPassword() {
+        return null;
+    }
+
+    @Override
+    public String getUsername() {
+        return String.valueOf(user.getUserId());
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+}

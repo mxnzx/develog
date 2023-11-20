@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6eb7c452771ac1c466148940e5ceb05e4b0af9e151d22e4a344efe6ab70f7ccb
-size 558
+package com.ssafy.develog.company.dto.response;
+
+
+import com.ssafy.develog.interview.domain.ScriptKeyword;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponsePredictionKeyword {
+
+    private String keyword;
+
+    public static ResponsePredictionKeyword from(ScriptKeyword scriptKeyword){
+
+        ResponsePredictionKeyword response = new ResponsePredictionKeyword();
+        response.keyword = scriptKeyword.getKeyword();
+
+        return response;
+    }
+}

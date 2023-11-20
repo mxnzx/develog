@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ef66b627ec8d94678081231d326ee0717a4fb8206d4982670e7a40fecda5fae7
-size 549
+package com.ssafy.develog.company.dto.response;
+
+import com.ssafy.develog.interview.domain.TailScriptKeyword;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseTailKeyword {
+
+    private String keyword;
+
+    public static ResponseTailKeyword from(TailScriptKeyword tailScriptKeyword){
+
+        ResponseTailKeyword response = new ResponseTailKeyword();
+        response.keyword = tailScriptKeyword.getKeyword();
+
+        return response;
+    }
+}

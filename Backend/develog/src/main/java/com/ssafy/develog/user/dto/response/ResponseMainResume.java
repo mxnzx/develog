@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:588ff711beb710f014020ac19860434f4095ace90dae8ad448e1bcb1d811611e
-size 932
+package com.ssafy.develog.user.dto.response;
+
+import com.ssafy.develog.company.domain.History;
+import lombok.Data;
+
+@Data
+public class ResponseMainResume {
+
+    private Long resumeId;
+    private Long companyId;
+    private String name;
+    private String section;
+    private String chapter;
+    private Long historyId;
+
+    public static ResponseMainResume from(History mainResume) {
+
+        if(mainResume.getResume() == null || mainResume.getCompany() == null) return null;
+
+        ResponseMainResume response = new ResponseMainResume();
+        response.historyId = mainResume.getHistoryId();
+        response.resumeId = mainResume.getResume().getResumeId();
+        response.companyId = mainResume.getCompany().getCompanyId();
+        response.name = mainResume.getCompany().getName();
+        response.section = mainResume.getSection();
+        response.chapter = mainResume.getChapter();
+
+        return response;
+    }
+
+}

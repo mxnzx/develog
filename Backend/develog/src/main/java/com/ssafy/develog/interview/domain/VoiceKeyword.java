@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ad3ccb8a8314642404431f91682ec99412c6781c12779aa05690ef748819c661
-size 938
+package com.ssafy.develog.interview.domain;
+
+import com.ssafy.develog.common.domain.BaseCheckType;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class VoiceKeyword {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long voiceKeywordId;
+
+    @JoinColumn(name = "voice_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Voice voice;
+
+    private String keyword;
+
+    @Enumerated(EnumType.STRING)
+    private BaseCheckType isContain;
+
+    public static VoiceKeyword makeVoiceKeyword(String keyword, Voice voice, BaseCheckType baseCheckType) {
+
+        VoiceKeyword pVoiceKeyword = new VoiceKeyword();
+
+        pVoiceKeyword.voice = voice;
+        pVoiceKeyword.keyword = keyword;
+        pVoiceKeyword.isContain = baseCheckType;
+
+        return pVoiceKeyword;
+    }
+}

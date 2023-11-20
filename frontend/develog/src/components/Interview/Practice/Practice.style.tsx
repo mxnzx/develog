@@ -1,3 +1,41 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f026938d632a816e65adf13c836c8373032c1319e7bbef8a62727d7eb10f975
-size 755
+import styled, { css } from "styled-components";
+
+interface IconProps {
+  checkTailQues?: boolean;
+}
+export const QuestionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 370px;
+  overflow: auto;
+  overflow-x: hidden;
+`;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 28px;
+  align-items: center;
+  margin: 2%;
+  position: relative;
+`;
+
+export const Icon = styled.img<IconProps>`
+  margin-left: 5px;
+  height: 70%;
+  z-index: 99;
+  ${(props) =>
+    props.checkTailQues &&
+    css`
+      position: absolute;
+      right: 0px;
+      z-index: 100;
+    `}
+`;
+
+export const BottomContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;

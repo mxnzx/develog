@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de719ff93c303d618fe2f39c07ba9679a4f854fc6d349776d248804f91ad8a16
-size 515
+import styled from "styled-components";
+import { backgroundWhite } from "style/Color";
+//전체 Container
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+//내부 Container
+export const InsideContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 23vw;
+  margin-bottom: 2%;
+`;
+
+export const Outline = styled.div`
+  border-radius: 2rem;
+  margin: 1%;
+  background-color: ${backgroundWhite};
+  height: 100%;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
+`;

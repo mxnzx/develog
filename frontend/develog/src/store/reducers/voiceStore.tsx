@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8abed26fad2e67af4a845e1b1b908b3b71a5eb759852e8c9689b732696709ec4
-size 651
+// userSlice.ts
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+
+// 사용자 상태 인터페이스 정의
+export interface VoiceState {
+  voiceURL: string;
+}
+
+// 초기 상태 정의
+const initialState: VoiceState = {
+  voiceURL: "blob:",
+};
+
+// createSlice를 사용하여 슬라이스 생성
+const VoiceSlice = createSlice({
+  name: "voiceStore",
+  initialState,
+  reducers: {
+    recentResume: (state, action) => {
+      // console.log(action, "voiceStore - TTS 업데이트");
+      state.voiceURL = action.payload.voiceURL;
+    },
+  },
+});
+
+export const { recentResume } = VoiceSlice.actions;
+
+export default VoiceSlice.reducer;

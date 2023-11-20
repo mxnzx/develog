@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9be9a9869f437f584ce30fa2ffda5595f58cc1d477aff6adc8ed7291ea3b6ac9
-size 763
+package com.ssafy.develog.interview.dto.response;
+
+import com.ssafy.develog.resume.domain.ResumeDetail;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseInterviewMainChanged {
+    private ResponseResumeDetail resumeDetail;
+    private List<ResponsePrediction> predictionResponses;
+
+    public static ResponseInterviewMainChanged from(ResumeDetail resumeDetail) {
+
+        ResponseInterviewMainChanged response = new ResponseInterviewMainChanged();
+
+        response.resumeDetail = ResponseResumeDetail.from(resumeDetail);
+        response.predictionResponses = ResponsePrediction.from(resumeDetail);
+
+        return response;
+    }
+}

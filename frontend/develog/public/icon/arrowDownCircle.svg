@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84b5cfbec2c7552831ab58d0355ed5430f1884cd8f0acfdb095933bfc6d43433
-size 864
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon / tabler-icons / arrow-down-circle" clip-path="url(#clip0_12_9779)">
+<path id="Vector" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M8 12L12 16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M12 8V16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M16 12L12 16" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_12_9779">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b617889d548d3cd6828f356dc09b0e81b75dc3907cb09f59d086f05a175eba6a
-size 782
+package com.ssafy.develog.resume.dto.response;
+
+import com.ssafy.develog.common.domain.BaseCheckType;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseUserResume {
+
+    private BaseCheckType isQuestion;
+    private List<ResponseResumeDetail> responseResumeDetailList = new ArrayList<>();
+
+    public static ResponseUserResume from(List<ResponseResumeDetail> resumeDetails){
+
+        ResponseUserResume response = new ResponseUserResume();
+
+        response.isQuestion = resumeDetails.isEmpty() ? BaseCheckType.F : BaseCheckType.T;
+        response.responseResumeDetailList = resumeDetails;
+
+        return response;
+    }
+
+}

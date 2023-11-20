@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9bcc55857d1db62ebc9b849b3f2c7b3e40298cfe85adc5f3550c7c26c2a8381
-size 943
+import React from "react";
+import * as S from "./HomeCompanyItem.style";
+
+type HomeCompanyItemProps = {
+  company: {
+    name: string;
+    logoUrl: string;
+  };
+  onClick?: () => void; // onClick prop 정의
+};
+const nameSlice = (name: string) => {
+  const sliceName = name.slice(0, 2);
+  return sliceName;
+};
+const HomeCompanyItem: React.FC<HomeCompanyItemProps> = ({ company, onClick }) => {
+  return (
+    <S.ItemContainer onClick={onClick}>
+      {company.logoUrl === null ? (
+                <S.Box>
+                  <S.NoLogo>{nameSlice(company.name)}</S.NoLogo>
+                  <S.CompanyName>{company.name}</S.CompanyName>
+                </S.Box>
+              ) : (
+                <S.Box>
+                  <S.CompanyImg src={company.logoUrl}></S.CompanyImg>
+                  <S.CompanyName>{company.name}</S.CompanyName>
+                </S.Box>
+              )}
+    </S.ItemContainer>
+  );
+};
+
+export default HomeCompanyItem;

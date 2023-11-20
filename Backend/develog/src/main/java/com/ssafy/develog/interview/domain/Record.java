@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:74e5fc9766b7a7901bcfd24b5fa23276ec959c8cc229d5d716ae1692d7056eb7
-size 1122
+package com.ssafy.develog.interview.domain;
+
+
+import com.ssafy.develog.common.domain.BaseTimeEntity;
+import com.ssafy.develog.company.domain.History;
+import com.ssafy.develog.resume.domain.ResumeDetail;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class Record extends BaseTimeEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long recordId;
+
+    @JoinColumn(name = "interview_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Interview interview;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "record", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<RecordDetail> recordDetails;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "record", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Video> videos;
+
+
+    public static Record makeRecord(Interview interview){
+
+        Record record = new Record();
+        record.interview = interview;
+
+        return record;
+    }
+
+}

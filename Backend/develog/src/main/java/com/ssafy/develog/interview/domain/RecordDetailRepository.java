@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6e74d28ffe369635a0befaaac7c1360aee8b6eba4030b961a38cc7efb9703e5
-size 1034
+package com.ssafy.develog.interview.domain;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface RecordDetailRepository extends JpaRepository<RecordDetail, Long> {
+
+
+    @Query("select rd from RecordDetail rd " +
+            "left join fetch rd.prediction " +
+            "left join fetch rd.tail " +
+            "where rd.recordDetailId = :recordDetailId")
+    Optional<RecordDetail> findRecordDetailByRecordDetail(@Param("recordDetailId") Long recordDetailId);
+
+    @Query("select distinct rd from RecordDetail rd " +
+            "left join fetch rd.record r " +
+            "left join fetch r.videos " +
+            "left join rd.recordDetailKeywordList " +
+            "where rd.record.recordId = :recordId " +
+            "order by rd.recordDetailId ")
+    List<RecordDetail> findRecordDetailsByRecord(@Param("recordId") Long recordId);
+
+}

@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e365fddd513825e6425735893f9fa027bd0a7f823c8b6ffa94b39a2a56a50d45
-size 1004
+package com.ssafy.develog.user.dto.response;
+
+import com.ssafy.develog.user.domain.User;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class ResponseMain {
+
+    private String userName;
+    private String userEmail;
+//    private String userProfileIamgeUrl;
+    private List<ResponseMainInterestingCompany> mainInterestingCompany;
+    private List<ResponseMainResume> mainResume;
+    private List<ResponseMainInterview> mainInterview;
+
+    public static ResponseMain from(User user, List<ResponseMainInterestingCompany> interestingCompanies, List<ResponseMainResume> resumes, List<ResponseMainInterview> interviews) {
+
+        ResponseMain response = new ResponseMain();
+
+        response.userName = user.getName();
+        response.userEmail = user.getEmail();
+//        response.userProfileIamgeUrl = user.
+        response.mainInterestingCompany = interestingCompanies;
+        response.mainResume = resumes;
+        response.mainInterview = interviews;
+
+        return response;
+    }
+
+}

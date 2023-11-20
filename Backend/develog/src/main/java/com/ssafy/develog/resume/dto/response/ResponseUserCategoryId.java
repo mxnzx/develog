@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32cc93c44e25c6aa261f7bc206c7ad4833f9e9de1bbbaeb19aef4c5f1b45262a
-size 556
+package com.ssafy.develog.resume.dto.response;
+
+import com.ssafy.develog.resume.domain.UserCategory;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ResponseUserCategoryId {
+
+    private Long userCategoryId;
+
+    public static ResponseUserCategoryId from(UserCategory userCategory){
+
+        ResponseUserCategoryId response = new ResponseUserCategoryId();
+        response.userCategoryId = userCategory.getUserCategoryId();
+
+        return response;
+    }
+}

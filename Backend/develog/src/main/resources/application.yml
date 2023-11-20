@@ -1,3 +1,49 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c184292c63a5bd328849a5ea868e3eae486535439ecad8cb3346c51cdd6664
-size 920
+server:
+  port: 9090
+
+
+spring:
+  #Redis
+  redis:
+    host: ${PUBLIC_IP}
+    port: ${REDIS_PORT}
+    password: ${REDIS_PASSWORD}
+  # MySQL
+  datasource:
+    url: jdbc:mysql://${PUBLIC_IP}:${DB_PORT}/${DB_NAME}?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: ${DB_USER_NAME}
+    password: ${DB_USER_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+#      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 1000 # 최적화 옵션
+
+logging.level:
+  org.hibernate.SQL: debug
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+
+
+
+# S3
+
+cloud:
+  aws:
+    s3:
+      url: ${S3_URL}
+      bucket: ${S3_BUCKET}
+    credentials:
+      access-key: ${CREDENTIALS_ACCESS_KEY}
+      secret-key: ${CREDENTIALS_SECRET_KEY}
+    region:
+      static: ${REGION_STATIC}
+      auto: false
+    stack:
+      auto: false
