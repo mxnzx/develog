@@ -136,3 +136,13 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
 
 <h2>7️⃣ 서비스 화면</h2> 
 <br />
+
+### 메인페이지
+- 비로그인시
+  <img src="etc/img/메인비로그인시.png" />
+- 로그인 시
+  <img src="etc/img/로그인시메인.gif" />
+
+### 관심기업 리스트
+- 기업등록하기
+  <img src="etc/img/기업등록.gif" /> 
