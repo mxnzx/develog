@@ -82,8 +82,7 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
 <br />
 
 <h2>4️⃣ 기술 스택</h2> 
-![stack](etc/img/기술스택.png)
--Back-End
+<img src="etc/img/기술스택.png" />
     - Java JDK 11
     - Spring Boot 2.7.17
     - Spring DATA JPA
@@ -93,7 +92,6 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
     - QueryDSL
     - Python
     - Fast-api
-- Front-End
     - React
     - Vite
     - Redux
@@ -103,16 +101,13 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
     - Node.js
     - Axios
     - Styled-components
-- Infra
     - Docker
     - Ngnix
     - Jenkins
     - Amazon S3
-- DB
     - MySQL
     - S3
     - Redis
-- Team Collaboration Tool
     - Gitlab
     - Jira
     - Notion
@@ -120,12 +115,14 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
     - Mattermost
 <br />
 
-### 5️⃣ ERD
-![ERD](etc/img/ERD.png)
+<h2>5️⃣ ERD</h2> 
+ <img src="etc/img/ERD.png" />
 <br />
 
-### 6️⃣ [API 명세](https://educated-horn-9ae.notion.site/c6f8f48adc6f4535ae402d06777fda74?v=e65a4a0f258c42d6aeca896e1439a565)
-<br />
+<h2>6️⃣ [API 명세]
+  <br />
+<h5>[https://educated-horn-9ae.notion.site/c6f8f48adc6f4535ae402d06777fda74?v=e65a4a0f258c42d6aeca896e1439a565]</h5>
+ <br />
 
-### 7️⃣ 서비스 화면
+<h2>7️⃣ 서비스 화면</h2> 
 <br />
