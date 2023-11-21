@@ -93,56 +93,67 @@ https://www.youtube.com/watch?v=vzH0BbY1lxA
 
 <h2>4️⃣ 기술 스택</h2> 
 <img src="etc/img/기술스택.png" />
-    - Java JDK 11
-    - Spring Boot 2.7.17
-    - Spring DATA JPA
-    - Spring Security
-    - JWT
-    - OAuth2
-    - QueryDSL
-    - Python
-    - Fast-api
-    - React
-    - Vite
-    - Redux
-    - Redux-Persist
-    - React-query
-    - TypeScript
-    - Node.js
-    - Axios
-    - Styled-components
-    - Docker
-    - Ngnix
-    - Jenkins
-    - Amazon S3
-    - MySQL
-    - S3
-    - Redis
-    - Gitlab
-    - Jira
-    - Notion
-    - Figma
-    - Mattermost
 <br />
 
 <h2>5️⃣ ERD</h2> 
  <img src="etc/img/ERD.png" />
 <br />
 
-<h2>6️⃣ [API 명세]
-  <br />
-<h5>[https://educated-horn-9ae.notion.site/c6f8f48adc6f4535ae402d06777fda74?v=e65a4a0f258c42d6aeca896e1439a565]</h5>
+<h2>6️⃣ API 명세서</h2>
+<a href="https://educated-horn-9ae.notion.site/c6f8f48adc6f4535ae402d06777fda74?v=e65a4a0f258c42d6aeca896e1439a565">API 명세서</a>
  <br />
 
 <h2>7️⃣ 서비스 화면</h2> 
-<br />
+
 
 ### 메인페이지
 - 비로그인시
+  
   <img src="etc/img/메인비로그인시.png" />
+  <br />
+  <br />
 - 로그인 시
+  
   <img src="etc/img/로그인시메인.gif" />
 
 ### 관심기업 리스트
 - 기업등록하기
+  
   <img src="etc/img/기업등록.gif" /> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 면접 연습하기
+
+- 스크립트 작성 가능
+- 음성 녹음 후 스코어링 기능 제공
+- chatGPT를 통한 꼬리 질문 제공
+<img src="etc/img/면접연습하기.gif" />
+
+
+
+### 면접 예상질문 추출 & 질문 추가
+- chatGPT를 통한 예상 질문 5개 제공
+- 사용자가 원하는 질문 직접 추가 가능
+
+<img src="etc/img/면접예상질문추출.gif" />
+
+
+### 포트폴리오 조회 및 수정
+- 학력, 경력, 자격증, 교육, ㅍ로젝트, 어학 관련 정보 확인 및 수정 가능
+- 자기소개서 작성할 때 좌측에 표시되는 데이터들.
+
+<img src="etc/img/포트폴리오.gif" />
