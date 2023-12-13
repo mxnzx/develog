@@ -102,7 +102,7 @@
 <br />
 
 <h2>6️⃣ API 명세서</h2>
-<a href="https://educated-horn-9ae.notion.site/c6f8f48adc6f4535ae402d06777fda74?v=e65a4a0f258c42d6aeca896e1439a565">API 명세서</a>
+<a href="https://mimiimmi.notion.site/API-4735c827e20b4f45a962cda5ec4b4653?pvs=4">API 명세서</a>
  <br />
 
 <h2>7️⃣ 서비스 화면</h2> 
