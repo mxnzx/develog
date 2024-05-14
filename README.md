@@ -61,7 +61,7 @@
 
 
 ### 🏷️ UCC
-<a href="https://github.com/Sohyun043011](https://www.youtube.com/watch?v=vzH0BbY1lxA" marginTop="0" height="150" ><img src="https://cdn-icons-png.flaticon.com/512/725/725300.png"  height="160" width="170" /><br />UCC 보러가기 GoGo </a>
+<a href="https://github.com/Sohyun043011](https://www.youtube.com/watch?v=vzH0BbY1lxA" marginTop="0" height="150" ><img src="https://cdn-icons-png.flaticon.com/512/725/725300.png"  height="160" width="170" /><br />UCC 보러가기 GoGo(현재 시청 불가) </a>
 <br />
 <br />
 
